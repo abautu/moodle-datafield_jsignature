@@ -52,7 +52,7 @@ class data_field_jsignature extends data_field_base {
         $secret = get_site_identifier();
         $url = $CFG->wwwroot . '/mod/data/field/jsignature/img.php?data=' . $data;
         if ($signature != md5($url . $secret)) {
-            header('401 Access denied');
+            http_response_code(401);
             echo 'Invalid signature';
             exit;
         }

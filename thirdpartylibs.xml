@@ -29,7 +29,7 @@
         <licenseversion></licenseversion>
     </library>
     <library>
-        <location>amd/build/flashcanvas.js</location>
+        <location>amd/build/flashcanvas.min.js</location>
         <name>flashcanvas</name>
         <version>2012-08-16T21:49</version>
         <license>MIT</license>
